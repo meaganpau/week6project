@@ -46,3 +46,5 @@ $(function(){
 	console.log('hey hey');
 	makeupApp.init();
 });
+
+
