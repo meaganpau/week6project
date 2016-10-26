@@ -1,1 +1,26 @@
 @import 'setup';
+@import 'variables';
+
+#section2,  #section3,  #section4, #section5  {
+	display: none;
+}
+
+#section1 {
+	background: yellow;
+}
+
+#section2 {
+	background: red;
+}
+
+#section3 {
+	background: blue;
+}
+
+#section4 {
+	background: green;
+}
+
+#section5 {
+	background: grey;
+}
