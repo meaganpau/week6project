@@ -8,81 +8,98 @@
 </head>
 <body>
 	<section id="section1">
-		<button id="start">Start</button>
+		<div class="wrapper">
+			<div class="inner-wrapper">
+				<h1>Find your make up</h1>
+				<p>On the search for some new make up products?</p>
+				<p>We'll help you build a kit tailored to your needs!</p>
+				<button id="start">Get Started</button>
+			</div>
+		</div>
 	</section>
 	<section id="section2">
 		<form action="">
 			<fieldset>
 				<div class="make-up-wrapper">
 					<div class="make-up">
-						<label for="blush"></label>
-						<input type="radio" name="product-type" id="blush" value="blush">
-						<div class="icon">
-							<img src="images/blush.svg" alt="image of blush">
-						</div>
+						<label for="blush">
+							<div class="icon">
+								<img src="images/blush.svg" alt="image of blush">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="blush" value="blush">
 					</div>
 					<div class="make-up">
-						<label for="bronzer"></label>
-						<input type="radio" name="product-type" id="bronzer" value="bronzer">
-						<div class="icon">
-							<img src="images/bronzer.svg" alt="image of bronzer">
-						</div>
+						<label for="bronzer">
+							<div class="icon">
+								<img src="images/bronzer.svg" alt="image of bronzer">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="bronzer" value="bronzer">
 					</div>
 					<div class="make-up">
-						<label for="eyebrow"></label>
-						<input type="radio" name="product-type" id="eyebrow" value="eyebrow">
-						<div class="icon">
-							<img src="images/eye_brow.svg" alt="image of eyebrow">
-						</div>
+						<label for="eyebrow">
+							<div class="icon">
+								<img src="images/eye_brow.svg" alt="image of eyebrow">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="eyebrow" value="eyebrow">
 					</div>
 					<div class="make-up">
-						<label for="eyeliner"></label>
-						<input type="radio" name="product-type" id="eyeliner" value="eyeliner">
-						<div class="icon">
-							<img src="images/eye_liner2.svg" alt="image of eyeliner">
-						</div>
+						<label for="eyeliner">
+							<div class="icon">
+								<img src="images/eye_liner2.svg" alt="image of eyeliner">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="eyeliner" value="eyeliner">
 					</div>
 					<div class="make-up">
-						<label for="eyeshadow"></label>
-						<input type="radio" name="product-type" id="eyeshadow" value="eyeshadow">
-						<div class="icon">
-							<img src="images/eye_shadow.svg" alt="image of eyeshadow">
-						</div>
+						<label for="eyeshadow">
+							<div class="icon">
+								<img src="images/eye_shadow.svg" alt="image of eyeshadow">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="eyeshadow" value="eyeshadow">
 					</div>
 					<div class="make-up">
-						<label for="foundation"></label>
-						<input type="radio" name="product-type" id="foundation" value="foundation">
-						<div class="icon">
-							<img src="images/foundation.svg" alt="image of foundation">
-						</div>
+						<label for="foundation">
+							<div class="icon">
+								<img src="images/foundation.svg" alt="image of foundation">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="foundation" value="foundation">
 					</div>
 					<div class="make-up">
-						<label for="lipliner"></label>
-						<input type="radio" name="product-type" id="lipliner" value="lipliner">
-						<div class="icon">
-							<img src="images/lip_liner.svg" alt="image of lipliner">
-						</div>
+						<label for="lipliner">
+							<div class="icon">
+								<img src="images/lip_liner.svg" alt="image of lipliner">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="lipliner" value="lipliner">
 					</div>
 					<div class="make-up">
-						<label for="lipstick"></label>
-						<input type="radio" name="product-type" id="lipstick" value="lipstick">
-						<div class="icon">
-							<img src="images/lipstick.svg" alt="image of lipstick">
-						</div>
+						<label for="lipstick">
+							<div class="icon">
+								<img src="images/lipstick.svg" alt="image of lipstick">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="lipstick" value="lipstick">
 					</div>
 					<div class="make-up">
-						<label for="mascara"></label>
-						<input type="radio" name="product-type" id="mascara" value="mascara">
-						<div class="icon">
-							<img src="images/mascara.svg" alt="image of mascara">
-						</div>
+						<label for="mascara">
+							<div class="icon">
+								<img src="images/mascara.svg" alt="image of mascara">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="mascara" value="mascara">
 					</div>
 					<div class="make-up">
-						<label for="nailpolish"></label>
-						<input type="radio" name="product-type" id="nailpolish" value="nailpolish">
-						<div class="icon">
-							<img src="images/nailpolish.svg" alt="image of nail polish">
-						</div>
+						<label for="nailpolish">
+							<div class="icon">
+								<img src="images/nailpolish.svg" alt="image of nail polish">
+							</div>
+						</label>
+						<input type="checkbox" name="product-type" id="nailpolish" value="nailpolish">
 					</div>
 				</div>
 			</fieldset>
@@ -91,13 +108,13 @@
 	<section id="section3">
 		<fieldset>
 			<label for="$"></label>
-			<input type="radio" value="0,10">
+			<input id="$" name="makeup-price" type="radio" value="0,10">
 			<label for="$$"></label>
-			<input type="radio" value="10,25">
+			<input id="$$" name="makeup-price" type="radio" value="10,25">
 			<label for="$$$"></label>
-			<input type="radio" value="25,50">
+			<input id="$$$" name="makeup-price" type="radio" value="25,50">
 			<label for="$$$$"></label>
-			<input type="radio" value="50,1000">
+			<input id="$$$$" name="makeup-price" type="radio" value="50,1000">
 		</fieldset>
 		<fieldset>
 			<input type="submit" value="Next" id="next2">
