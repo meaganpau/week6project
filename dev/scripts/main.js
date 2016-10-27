@@ -2,7 +2,7 @@ var selectedProducts = [];
 var userPriceMin;
 var userPriceMax;
 var makeupApp = {};
-var productLimit = 4;
+var productLimit = 3;
 
 makeupApp.getMakeup = function() {
 	for (var i = 0; i < selectedProducts.length; i++) {
@@ -17,7 +17,6 @@ makeupApp.getMakeup = function() {
 			}
 		}).then(function(results){
 			makeupApp.filterProduct(results);
-			console.log('do my results work!?!');
 		});
 	}
 };
@@ -52,10 +51,15 @@ makeupApp.filterProduct = function(results) {
 			alt: item.name,
 			title: item.name
 		});
-		var $productURL = $('<p>').text(item.product_link);
-		$resultsContainer.append($productName, $productPrice, $productImage);
-		// $('#section4').append($resultsContainer);
-		var $labelContainer = $('<div>');
+		var $productlink = $('<a>').attr({
+			href: item.product_link,
+			target: '_blank'
+		});
+		$productlink.append('Details');
+		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
+		var $labelContainer = $('<div>').attr({
+			class: 'productItem'
+		});
 		var $label = $('<label>').attr({
 			for: item.id
 		});
@@ -74,21 +78,17 @@ makeupApp.filterProduct = function(results) {
 }
 
 
-
-makeupApp.init = function() {
-	// makeupApp.getMakeup();
-}
 //user needs to select up to 3 choices
 //user cannot select more than 3 choices
 $('input[name=product-type]').on('change', function(){
-	if ($('input[name=product-type]:checked').length >= productLimit) {
+	if ($('input[name=product-type]:checked').length > productLimit) {
 		this.checked = false;
 	}
 });
 
 makeupApp.selectFinals = function() {
 	$('input[name=selected-makeup]').on('change', function(){
-		if ($('input[name=selected-makeup]:checked').length >= productLimit) {
+		if ($('input[name=selected-makeup]:checked').length > productLimit) {
 			this.checked = false;
 		}
 	});
@@ -128,8 +128,6 @@ $('#next3').on('click', function(e){
 })
 
 $(function(){
-	console.log('hey hey');
-	makeupApp.init();
 });
 
 

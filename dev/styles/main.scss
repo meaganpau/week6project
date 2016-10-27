@@ -9,10 +9,6 @@ h1, h2, h3, p {
 	padding: 0;
 }
 
-section {
-	height: 100vh;
-}
-
 #section1 {
 	// background: yellow;
 	h1 {
@@ -88,4 +84,30 @@ section {
 
 #section5 {
 	background: grey;
+}
+
+.make-up-wrapper {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.make-up {
+	width: 20%;
+}
+
+.last-results {
+	border: 1px solid black;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	img {
+		height: 100px;
+	}
+	.productItem {
+		width: 25%;
+		text-align: center;
+	}
 }
