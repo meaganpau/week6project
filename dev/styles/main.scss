@@ -1,13 +1,50 @@
 @import 'setup';
 @import 'variables';
 
-body {
+@mixin fontRoboto($sizeValue) {
+	font-size: $sizeValue;
+	font-family: $roboto;
+	text-transform: uppercase;
+}
+	
+//---GLOBAL ---//
+html {
+	font-size: 10px;
 }
 
 h1, h2, h3, p {
 	margin: 0;
 	padding: 0;
 }
+
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3.7rem;
+	font-family: $oswald;
+
+}
+h3 {
+	@include fontRoboto(1rem);
+	color:white;
+	margin-top: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 0.068rem;
+}
+p {
+	font-size: 1.6rem;
+	font-family: $roboto;
+	font-weight: 200;
+}
+
+fieldset {
+	border:none;
+}
+
+//---GLOBAL ---//
+
+//---SECTION 1 ---//
 
 #section1 {
 	// background: yellow;
@@ -52,6 +89,9 @@ h1, h2, h3, p {
 	border: 1px solid black;
 }
 
+//---SECTION 1 ---//
+
+
 .make-up-wrapper {
 	display: flex;
 	justify-content: space-around;
@@ -63,33 +103,85 @@ h1, h2, h3, p {
 }
 
 .make-up img {
-	height: 100px;
+	height: 54px;;
 }
 
 #section1, #section2,  #section3,  #section5  {
 	height: 100vh;
+	min-height:600px;
 }
 
 #section2,  #section3,  #section4, #section5  {
 	display: none;
 }
+//---- SECTION 2--------///
 
 #section2 {
 	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.title {
+		text-align: center;
+		color:white;
+
+	}
 }
+// .section-wrapper {
+
+// }
+
+.icon {
+	// border: 1px solid $red;
+	background: $grey;
+	width: 100px;
+	border-radius: 50%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	transition: ease .3s;
+	&:hover {
+		background: #37393b;
+	}
+}
+
+.make-up input[type=checkbox]:checked + label .icon{
+	background: $red;
+}
+
+.btn-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+//---- SECTION 2--------///
+
+
+//-----SECITON 3 --------//
 
 #section3 {
 	background: blue;
 }
 
+//-----SECITON 3 --------//
+
+//-----SECITON 4 --------//
 #section4 {
 	background: green;
 }
+
+//-----SECITON 4 --------//
+
+
+//-----SECITON 5 --------//
 
 #section5 {
 	background: grey;
 }
 
+//-----SECITON 5 --------//
 .make-up-wrapper {
 	margin: 0 auto;
 	width: 80%;
@@ -99,6 +191,10 @@ h1, h2, h3, p {
 
 .make-up {
 	width: 20%;
+	margin-top: 4rem;
+	input{
+		visibility: hidden;
+	}
 }
 
 .last-results {

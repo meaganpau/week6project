@@ -18,92 +18,110 @@
 		</div>
 	</section>
 	<section id="section2">
-		<form action="">
-			<fieldset>
-				<div class="make-up-wrapper">
-					<div class="make-up">
-						<label for="blush">
-							<div class="icon">
-								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.12 82.67"><title>blush</title><path fill="white" d="M89.14,26.37L89,26.14a18.4,18.4,0,0,0-4.62-4.81h0a18.33,18.33,0,0,0-20.8-.41l-0.24.16-0.15.25a1.46,1.46,0,0,0-.15,1.2L68,37.76l-1,5L59.93,85l0.42,0.45a5.79,5.79,0,0,0,4,1.74,5.3,5.3,0,0,0,2.16-.47l0.56-.25L77.3,44.78l1-4.9,10.52-12a1.47,1.47,0,0,0,.35-1.22ZM64.95,84.59a2.59,2.59,0,0,1-.6.07,3.11,3.11,0,0,1-1.73-.58L69.2,44.47l3.63,0.75,0.51-2.46L69.66,42l0.6-2.91,5.42,1.11-0.83,4ZM76.74,37.85L70.2,36.51,65.68,22.56a15.78,15.78,0,0,1,3.09-1.35l0.34,6.56A1.26,1.26,0,0,0,70.35,29h0.07a1.25,1.25,0,0,0,1.19-1.32l-0.36-7a15.7,15.7,0,0,1,2.41-.2,16,16,0,0,1,1.89.11L74,26.29a1.26,1.26,0,0,0,.89,1.54,1.29,1.29,0,0,0,.33,0,1.26,1.26,0,0,0,1.21-.93L78,21a15.79,15.79,0,0,1,3.92,1.72L75.19,32.86a1.25,1.25,0,0,0,.35,1.74,1.24,1.24,0,0,0,.69.21,1.25,1.25,0,0,0,1-.56L84,24.2a16,16,0,0,1,2.44,2.61Z" transform="translate(-3.08 -5.1)"/><path fill="white" d="M51.95,16.49c0-4.6-10.85-6.69-20.92-6.69S10.1,11.89,10.1,16.49s10.85,6.7,20.93,6.7S51.95,21.09,51.95,16.49Zm-39.34,0c0-1.42,6.5-4.18,18.42-4.18s18.41,2.76,18.41,4.18S42.94,20.67,31,20.67,12.61,17.91,12.61,16.49Z" transform="translate(-3.08 -5.1)"/><path fill="white" d="M43.53,34.8l0,0a5.73,5.73,0,0,1-.11-8C52.77,25,59,21.14,59,16.48,59,10,47,5.1,31,5.1S3.08,10,3.08,16.48c0,4.61,6.09,8.41,15.33,10.23a5.76,5.76,0,0,1-.07,8.05,1.17,1.17,0,0,0-.23.34A27.94,27.94,0,1,0,43.53,34.8ZM5.59,16.49C5.59,12.29,16,7.61,31,7.61s25.43,4.68,25.43,8.87S46,25.36,31,25.36,5.59,20.68,5.59,16.49ZM21.77,27.27a69.5,69.5,0,0,0,9.25.6,70.12,70.12,0,0,0,9-.57,8.2,8.2,0,0,0-.73,3.39,8.3,8.3,0,0,0,.4,2.54,27.87,27.87,0,0,0-17.65.16A8.3,8.3,0,0,0,21.77,27.27Zm9.34,58A25.43,25.43,0,1,1,56.55,59.83,25.46,25.46,0,0,1,31.11,85.26Z" transform="translate(-3.08 -5.1)"/><path fill="white" d="M31.11,37.08A22.75,22.75,0,1,0,53.87,59.83,22.78,22.78,0,0,0,31.11,37.08ZM10.87,59.83a20.25,20.25,0,0,1,19-20.18V80A20.25,20.25,0,0,1,10.87,59.83ZM32.37,80V39.65A20.21,20.21,0,0,1,32.37,80Z" transform="translate(-3.08 -5.1)"/></svg>
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="blush" value="blush">
+		<div class="section-wrapper">
+			<form action="">
+				<fieldset>
+					<div class="title">
+						<h2>Choose Your Make-Up</h2>
+						<p> You can choose up to 3</p>
 					</div>
-					<div class="make-up">
-						<label for="bronzer">
-							<div class="icon">
-								<img src="images/bronzer.svg" alt="image of bronzer">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="bronzer" value="bronzer">
+					<div class="make-up-wrapper">
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="blush" value="blush">
+							<label for="blush">
+								<div class="icon">
+									<img src="images/blush.svg" alt="image of blush">
+								</div>
+								<h3>blush</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="bronzer" value="bronzer">
+							<label for="bronzer">
+								<div class="icon">
+									<img src="images/bronzer.svg" alt="image of bronzer">
+								</div>
+								<h3>bronzer</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="eyebrow" value="eyebrow">
+							<label for="eyebrow">
+								<div class="icon">
+									<img src="images/eye_brow.svg" alt="image of eyebrow">
+								</div>
+								<h3>eyebrow</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="eyeliner" value="eyeliner">
+							<label for="eyeliner">
+								<div class="icon">
+									<img src="images/eye_liner2.svg" alt="image of eyeliner">
+								</div>
+								<h3>eyeliner</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="eyeshadow" value="eyeshadow">
+							<label for="eyeshadow">
+								<div class="icon">
+									<img src="images/eye_shadow.svg" alt="image of eyeshadow">
+								</div>
+								<h3>eyeshadow</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="foundation" value="foundation">
+							<label for="foundation">
+								<div class="icon">
+									<img src="images/foundation.svg" alt="image of foundation">
+								</div>
+								<h3>foundation</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="lipliner" value="lipliner">
+							<label for="lipliner">
+								<div class="icon">
+									<img src="images/lip_liner.svg" alt="image of lipliner">
+								</div>
+								<h3>lipliner</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="lipstick" value="lipstick">
+							<label for="lipstick">
+								<div class="icon">
+									<img src="images/lipstick.svg" alt="image of lipstick">
+								</div>
+								<h3>lipstick</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="mascara" value="mascara">
+							<label for="mascara">
+								<div class="icon">
+									<img src="images/mascara.svg" alt="image of mascara">
+								</div>
+								<h3>mascara</h3>
+							</label>
+						</div>
+						<div class="make-up">
+							<input type="checkbox" name="product-type" id="nailpolish" value="nailpolish">
+							<label for="nailpolish">
+								<div class="icon">
+									<img src="images/nailpolish.svg" alt="image of nail polish">
+								</div>
+								<h3>nailpolish</h3>
+							</label>
+						</div>
 					</div>
-					<div class="make-up">
-						<label for="eyebrow">
-							<div class="icon">
-								<img src="images/eye_brow.svg" alt="image of eyebrow">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="eyebrow" value="eyebrow">
+					<div class="btn-wrapper">
+						<button id="next1">Next</button>
 					</div>
-					<div class="make-up">
-						<label for="eyeliner">
-							<div class="icon">
-								<img src="images/eye_liner2.svg" alt="image of eyeliner">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="eyeliner" value="eyeliner">
-					</div>
-					<div class="make-up">
-						<label for="eyeshadow">
-							<div class="icon">
-								<img src="images/eye_shadow.svg" alt="image of eyeshadow">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="eyeshadow" value="eyeshadow">
-					</div>
-					<div class="make-up">
-						<label for="foundation">
-							<div class="icon">
-								<img src="images/foundation.svg" alt="image of foundation">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="foundation" value="foundation">
-					</div>
-					<div class="make-up">
-						<label for="lipliner">
-							<div class="icon">
-								<img src="images/lip_liner.svg" alt="image of lipliner">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="lipliner" value="lipliner">
-					</div>
-					<div class="make-up">
-						<label for="lipstick">
-							<div class="icon">
-								<img src="images/lipstick.svg" alt="image of lipstick">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="lipstick" value="lipstick">
-					</div>
-					<div class="make-up">
-						<label for="mascara">
-							<div class="icon">
-								<img src="images/mascara.svg" alt="image of mascara">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="mascara" value="mascara">
-					</div>
-					<div class="make-up">
-						<label for="nailpolish">
-							<div class="icon">
-								<img src="images/nailpolish.svg" alt="image of nail polish">
-							</div>
-						</label>
-						<input type="checkbox" name="product-type" id="nailpolish" value="nailpolish">
-					</div>
-				</div>
-			</fieldset>
-			<button id="next1">Next</button>
+				</fieldset>
+		</div>
 	</section>
 	<section id="section3">
 		<fieldset>
@@ -127,7 +145,6 @@
 		<button id="next3">Next</button>
 	</section>
 	<section id="section5">
-		<div class="finalSection"></div>
 		<h1>Section 5</h1>
 		<button id="restart"></button>
 	</section>
