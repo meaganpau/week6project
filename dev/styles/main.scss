@@ -66,12 +66,16 @@ h1, h2, h3, p {
 	height: 100px;
 }
 
+#section1, #section2,  #section3,  #section5  {
+	height: 100vh;
+}
+
 #section2,  #section3,  #section4, #section5  {
 	display: none;
 }
 
 #section2 {
-	background: red;
+	background: black;
 }
 
 #section3 {
