@@ -3,6 +3,7 @@ var userPriceMin;
 var userPriceMax;
 var makeupApp = {};
 var productLimit = 3;
+var finalResults = [];
 
 makeupApp.getMakeup = function() {
 	for (var i = 0; i < selectedProducts.length; i++) {
@@ -68,6 +69,11 @@ makeupApp.filterProduct = function(results) {
 			id: item.id,
 			name: 'selected-makeup',
 			value: item.id
+		}).data({
+			name: item.name,
+			image_link: item.image_link,
+			price: item.price,
+			product_link: item.product_link
 		});
 		$label.append($resultsContainer);
 		$labelContainer.append($label, $input);
@@ -75,7 +81,38 @@ makeupApp.filterProduct = function(results) {
 		makeupApp.selectFinals();
 	});
 
+	$('#next3').on('click', function(e){
+		e.preventDefault();
+		makeupApp.displayKit();
+		$('#section4').fadeOut();
+		$('#section5').delay(500).fadeIn();
+	})
+		
 }
+
+
+makeupApp.displayKit = function(){
+		var kit = [];
+		for (var i = 0; i < $('input[name=selected-makeup]:checked').length; i++) {
+			var item = $('input[name=selected-makeup]:checked').eq(i).data();
+			var productObject = {
+				name: item.name,
+				image: item.image_link,
+				price: item.price,
+				productlink: item.product_link
+			};
+			kit.push(productObject)
+		}
+		console.log('hey');
+		console.log(kit);
+}
+
+// Create object with image, name, price, url
+// User checks three options
+// Take checked results and put the in 
+// For each checked object, do a For loop 
+// And Push objects into the array
+
 
 
 //user needs to select up to 3 choices
@@ -121,11 +158,11 @@ $('#next2').on('click', function(e){
 	makeupApp.selectedPrice();
 })
 
-$('#next3').on('click', function(e){
-	e.preventDefault();
-	$('#section4').fadeOut();
-	$('#section5').delay(500).fadeIn();
-})
+// $('#next3').on('click', function(e){
+// 	e.preventDefault();
+// 	$('#section4').fadeOut();
+// 	$('#section5').delay(500).fadeIn();
+// })
 
 $(function(){
 });
