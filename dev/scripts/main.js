@@ -42,6 +42,8 @@ makeupApp.selectedPrice = function() {
 }
 
 makeupApp.filterProduct = function(results) {
+
+	console.log("res",results)
 	var firstResults = results
 	firstResults.forEach(function(item){
 		var $resultsContainer = $('<div>');
@@ -58,6 +60,7 @@ makeupApp.filterProduct = function(results) {
 		});
 		$productlink.append('Details');
 		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
+
 		var $labelContainer = $('<div>').attr({
 			class: 'productItem'
 		});
@@ -75,37 +78,56 @@ makeupApp.filterProduct = function(results) {
 			price: item.price,
 			product_link: item.product_link
 		});
+
+
 		$label.append($resultsContainer);
+
 		$labelContainer.append($label, $input);
 		$('.last-results').append($labelContainer);
 		makeupApp.selectFinals();
 	});
-
-	$('#next3').on('click', function(e){
-		e.preventDefault();
-		makeupApp.displayKit();
-		$('#section4').fadeOut();
-		$('#section5').delay(500).fadeIn();
-	})
 		
 }
 
 
 makeupApp.displayKit = function(){
-		var kit = [];
-		for (var i = 0; i < $('input[name=selected-makeup]:checked').length; i++) {
-			var item = $('input[name=selected-makeup]:checked').eq(i).data();
-			var productObject = {
-				name: item.name,
-				image: item.image_link,
-				price: item.price,
-				productlink: item.product_link
-			};
-			kit.push(productObject)
-		}
-		console.log('hey');
-		console.log(kit);
-}
+	var kit = [];
+	var productArray = [];
+	var checkedVal = $('input[name=selected-makeup]:checked').length;
+
+	console.log("values", checkedVal)
+
+
+	// productArray.push($('input[name=selected-makeup]:checked').data())
+	// console.log("array", productArray);
+
+	// checkedVal.forEach(function(item){
+	// 	console.log("item", item)
+	// })
+
+	for (var i = 0; i < $('input[name=selected-makeup]:checked').length; i++) {
+		var item = $('input[name=selected-makeup]:checked').eq(i).data();
+		var $resultsContainer = $('<div>');
+		var $productName = $('<p>').text(item.name);
+		var $productPrice = $('<p>').text(item.price);
+		var $productImage = $('<img>').attr({
+			src: item.image_link,
+			alt: item.name,
+			title: item.name
+		});
+		var $productlink = $('<a>').attr({
+			href: item.product_link,
+			target: '_blank'
+		});
+		$productlink.append('Details');
+		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
+		$('.finalSection').append($resultsContainer);
+	}
+};
+		// console.log("product", productObject)
+	// console.log('hey');
+
+
 
 // Create object with image, name, price, url
 // User checks three options
@@ -158,11 +180,13 @@ $('#next2').on('click', function(e){
 	makeupApp.selectedPrice();
 })
 
-// $('#next3').on('click', function(e){
-// 	e.preventDefault();
-// 	$('#section4').fadeOut();
-// 	$('#section5').delay(500).fadeIn();
-// })
+$('#next3').on('click', function(e){
+	e.preventDefault();
+	makeupApp.displayKit();
+	$('#section4').fadeOut();
+	$('#section5').delay(500).fadeIn();
+});
+
 
 $(function(){
 });
