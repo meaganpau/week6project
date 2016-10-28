@@ -21,10 +21,10 @@ h1, h2, h3, p {
 h2 {
 	text-transform: uppercase;
 	font-weight: 300;
-	font-size: 3.7rem;
+	font-size: 5rem;
 	font-family: $oswald;
-
 }
+
 h3 {
 	@include fontRoboto(1rem);
 	color:white;
@@ -32,10 +32,14 @@ h3 {
 	font-weight: 500;
 	letter-spacing: 0.068rem;
 }
+
 p {
-	font-size: 1.6rem;
 	font-family: $roboto;
-	font-weight: 200;
+	font-size: 1.5rem;
+	margin: 1%;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 0.75;
 }
 
 fieldset {
@@ -51,9 +55,9 @@ button, #next2 {
 	width: 200px;
 	font-family: $roboto;
 	margin: 5%;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
 }
-
-//---GLOBAL ---//
 
 //---SECTION 1 ---//
 
@@ -66,29 +70,11 @@ button, #next2 {
 	h1 {
 		font-family: $oswald;
 		text-transform: uppercase;
-		font-size: 5rem;
+		font-size: 7rem;
 		font-weight: 300;
 		margin: 5%;
 		letter-spacing: -1px;
 	}
-	p {
-		font-family: $roboto;
-		font-size: 1.2rem;
-		margin: 1%;
-		font-weight: 300;
-		letter-spacing: 1px;
-	}
-
-	// #start {
-	// 	border: 1px $red;
-	// 	background: $red;
-	// 	color: white;
-	// 	text-transform: uppercase;
-	// 	padding: 10px;
-	// 	width: 200px;
-	// 	font-family: $roboto;
-	// 	margin: 5%;
-	// }
 }
 
 .wrapper {
@@ -96,7 +82,6 @@ button, #next2 {
 		width: 65%;
 		padding: 10px;
 		text-align: center;
-		// margin-top: 10%;
 		background: rgba(255,255,255,0.85); 
 	}
 
@@ -106,19 +91,13 @@ button, #next2 {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-between;
 	align-items: center;
 }
 
 .inner-wrapper img {
 	position: absolute;
     top: 39%;
-    // left: 50%;
-    // transform: translate(-50%,-50%);
 }
-
-//---SECTION 1 ---//
-
 
 .make-up-wrapper {
 	display: flex;
@@ -146,12 +125,6 @@ button, #next2 {
 
 #section2 {
 	background: black;
-	// display: flex;
-	// .first {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// }
 	.title {
 		text-align: center;
 		color:white;
@@ -159,7 +132,6 @@ button, #next2 {
 }
 
 .icon {
-	// border: 1px solid $red;
 	background: $grey;
 	width: 100px;
 	border-radius: 50%;
@@ -184,32 +156,32 @@ button, #next2 {
 	text-align: center;
 }
 
-//---- SECTION 2--------///
+.section-wrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
-//-----SECITON 3 --------//
+//-----SECTION 3 --------//
 
 #section3 {
-	background: blue;
+	background: black;
+	color: white;
+	text-align: center;
 }
 
-//-----SECITON 3 --------//
+//-----SECTION 4 --------//
 
-//-----SECITON 4 --------//
 #section4 {
-	background: green;
 }
 
-//-----SECITON 4 --------//
-
-
-//-----SECITON 5 --------//
+//-----SECTION 5 --------//
 
 #section5 {
-	background: grey;
 }
 
-//-----SECITON 5 --------//
 .make-up-wrapper {
 	margin: 0 auto;
 	width: 80%;
@@ -233,6 +205,7 @@ button, #next2 {
 	flex-wrap: wrap;
 	img {
 		height: 100px;
+		border: 1px solid black;
 	}
 	.productItem {
 		width: 25%;
