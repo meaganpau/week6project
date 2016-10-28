@@ -48,7 +48,7 @@ makeupApp.filterProduct = function(results) {
 	firstResults.forEach(function(item){
 		var $resultsContainer = $('<div>');
 		var $productName = $('<p>').text(item.name);
-		var $productPrice = $('<p>').text(item.price);
+		var $productPrice = $('<p class="price">').text('$' + item.price);
 		var $productImage = $('<img>').attr({
 			src: item.image_link,
 			alt: item.name,
@@ -109,7 +109,7 @@ makeupApp.displayKit = function(){
 		var item = $('input[name=selected-makeup]:checked').eq(i).data();
 		var $resultsContainer = $('<div>');
 		var $productName = $('<p>').text(item.name);
-		var $productPrice = $('<p>').text(item.price);
+		var $productPrice = $('<p class="price">').text('$' + item.price);
 		var $productImage = $('<img>').attr({
 			src: item.image_link,
 			alt: item.name,
