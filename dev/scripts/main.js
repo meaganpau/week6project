@@ -60,7 +60,6 @@ makeupApp.filterProduct = function(results) {
 		});
 		$productlink.append('VIEW MORE DETAILS');
 		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
-
 		var $labelContainer = $('<div>').attr({
 			class: 'productItem'
 		});
@@ -78,12 +77,9 @@ makeupApp.filterProduct = function(results) {
 			price: item.price,
 			product_link: item.product_link
 		});
-
-
-		$label.append($resultsContainer);
-
-		$labelContainer.append($label, $input);
-		$('.last-results').append($labelContainer);
+		$labelContainer.append($resultsContainer);
+		$label.append($labelContainer, $input);
+		$('.last-results').append($label);
 		makeupApp.selectFinals();
 	});
 		
