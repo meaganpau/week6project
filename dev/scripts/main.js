@@ -173,6 +173,13 @@ $('#next1').on('click', function(e){
 	makeupApp.selectProducts();
 })
 
+$('#back1').on('click', function(e){
+	e.preventDefault();
+	$('#section2').fadeOut();
+	$('#section1').delay(500).fadeIn();
+	makeupApp.selectProducts();
+})
+
 $('#next2').on('click', function(e){
 	e.preventDefault();
 	$('#section3').fadeOut();
@@ -180,11 +187,31 @@ $('#next2').on('click', function(e){
 	makeupApp.selectedPrice();
 })
 
+$('#back2').on('click', function(e){
+	e.preventDefault();
+	$('#section3').fadeOut();
+	$('#section2').delay(500).fadeIn();
+	makeupApp.selectProducts();
+})
+
 $('#next3').on('click', function(e){
 	e.preventDefault();
 	makeupApp.displayKit();
 	$('#section4').fadeOut();
 	$('#section5').delay(500).fadeIn();
+});
+
+$('#back3').on('click', function(e){
+	e.preventDefault();
+	$('#section4').fadeOut();
+	$('#section3').delay(500).fadeIn();
+	makeupApp.selectProducts();
+})
+
+$('#restart').on('click', function(e) {
+ 	e.preventDefault();
+  	window.location.reload();
+   	setTimeout(window.location.reload);
 });
 
 
