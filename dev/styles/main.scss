@@ -218,7 +218,10 @@ button, #next2 {
 		border: 1px solid black;
 	}
 	.productItem {
-		width: 25%;
 		text-align: center;
+		width: 200px;
+		border: 1px solid grey;
+		height: 200px;
+		margin: 8px;
 	}
 }
