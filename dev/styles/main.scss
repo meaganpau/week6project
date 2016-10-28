@@ -101,7 +101,6 @@ button, #next2 {
 
 #section1, #section2,  #section3, #section4,  #section5  {
 	min-height: 100vh;
-	min-height:600px;
 }
 
 #section2,  #section3,  #section4, #section5  {
@@ -182,15 +181,11 @@ button, #next2 {
 	text-align: center;
 }
 
+
 //-----SECTION 4 --------//
 
 #section4 {
 	background: black;
-}
-
-//-----SECTION 5 --------//
-
-#section5 {
 }
 
 .make-up-wrapper {
@@ -234,6 +229,9 @@ button, #next2 {
 		justify-content: center;
 		padding: 15px;
 		background: white;
+		// input[type=checkbox] {
+		// 	// display:none;
+		// }
 		p {
 		line-height: 1.76rem;
 		text-transform: uppercase;
@@ -257,4 +255,9 @@ button, #next2 {
 
 button i {
 	color: white;
+}
+
+//-----SECTION 5 --------//
+
+#section5 {
 }
