@@ -58,7 +58,7 @@ makeupApp.filterProduct = function(results) {
 			href: item.product_link,
 			target: '_blank'
 		});
-		$productlink.append('Details');
+		$productlink.append('VIEW MORE DETAILS');
 		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
 
 		var $labelContainer = $('<div>').attr({
@@ -119,7 +119,7 @@ makeupApp.displayKit = function(){
 			href: item.product_link,
 			target: '_blank'
 		});
-		$productlink.append('Details');
+		$productlink.append('PURCHASE');
 		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
 		$('.finalSection').append($resultsContainer);
 	}
