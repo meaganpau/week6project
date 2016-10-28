@@ -42,12 +42,27 @@ fieldset {
 	border:none;
 }
 
+button, #next2 {
+	border: 1px $red;
+	background: $red;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	width: 200px;
+	font-family: $roboto;
+	margin: 5%;
+}
+
 //---GLOBAL ---//
 
 //---SECTION 1 ---//
 
 #section1 {
-	// background: yellow;
+	background: url(../../images/backgroundimg.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	h1 {
 		font-family: $oswald;
 		text-transform: uppercase;
@@ -64,15 +79,16 @@ fieldset {
 		letter-spacing: 1px;
 	}
 
-	#start {
-		border: 1px solid grey;
-		background: transparent;
-		text-transform: uppercase;
-		padding: 10px;
-		width: 200px;
-		font-family: $roboto;
-		margin: 5%;
-	}
+	// #start {
+	// 	border: 1px $red;
+	// 	background: $red;
+	// 	color: white;
+	// 	text-transform: uppercase;
+	// 	padding: 10px;
+	// 	width: 200px;
+	// 	font-family: $roboto;
+	// 	margin: 5%;
+	// }
 }
 
 .wrapper {
@@ -80,13 +96,25 @@ fieldset {
 		width: 65%;
 		padding: 10px;
 		text-align: center;
-		margin-top: 10%;
-		background: pink;
+		// margin-top: 10%;
+		background: rgba(255,255,255,0.85); 
 	}
 
 .inner-wrapper {
 	padding: 0;
-	border: 1px solid black;
+	border: 1px solid #a9a9a9;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	// justify-content: space-between;
+	align-items: center;
+}
+
+.inner-wrapper img {
+	position: absolute;
+    top: 39%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
 }
 
 //---SECTION 1 ---//
@@ -103,7 +131,7 @@ fieldset {
 }
 
 .make-up img {
-	height: 54px;;
+	height: 5.4rem;;
 }
 
 #section1, #section2,  #section3,  #section5  {
@@ -118,18 +146,17 @@ fieldset {
 
 #section2 {
 	background: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	// display: flex;
+	// .first {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// }
 	.title {
 		text-align: center;
 		color:white;
-
 	}
 }
-// .section-wrapper {
-
-// }
 
 .icon {
 	// border: 1px solid $red;
@@ -144,6 +171,7 @@ fieldset {
 	transition: ease .3s;
 	&:hover {
 		background: #37393b;
+		cursor: pointer;
 	}
 }
 
