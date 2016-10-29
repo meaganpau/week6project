@@ -42,8 +42,6 @@ makeupApp.selectedPrice = function() {
 }
 
 makeupApp.filterProduct = function(results) {
-
-	console.log("res",results)
 	var firstResults = results
 	firstResults.forEach(function(item){
 		var $resultsContainer = $('<div>');
@@ -77,6 +75,7 @@ makeupApp.filterProduct = function(results) {
 			price: item.price,
 			product_link: item.product_link
 		});
+		// $('#loader').fadeOut(1000);
 		$labelContainer.append($resultsContainer);
 		$label.append($labelContainer, $input);
 		$('.last-results').append($label);
@@ -181,6 +180,7 @@ $('#next2').on('click', function(e){
 	$('#section3').fadeOut();
 	$('#section4').delay(500).fadeIn();
 	makeupApp.selectedPrice();
+	// $('#loader').fadeIn(1000);
 })
 
 $('#back2').on('click', function(e){

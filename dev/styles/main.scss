@@ -82,10 +82,11 @@ button, #next2 {
 		width: 65%;
 		padding: 10px;
 		text-align: center;
-		background: rgba(255,255,255,0.85); 
+		background: rgba(255,255,255,0.75); 
 	}
 
 .inner-wrapper {
+	background: rgba(255,255,255,0.75); 
 	padding: 0;
 	border: 1px solid #a9a9a9;
 	position: relative;
@@ -99,8 +100,9 @@ button, #next2 {
     top: 42%;
 }
 
-#section1, #section2,  #section3,  #section4 #section5  {
+#section1, #section2,  #section3,  #section4, #section5  {
 	min-height: 100vh;
+}
 
 #section2,  #section3,  #section4, #section5  {
 	display: none;
@@ -140,7 +142,7 @@ button, #next2 {
 
 
 .make-up svg {
-	height: 5.4rem;;
+	height: 5.4rem;
 }
 
 .icon {
@@ -178,17 +180,21 @@ button, #next2 {
 	background: black;
 	color: white;
 	text-align: center;
+	fieldset label {
+		display: inline-block;
+	}
+}
+
+svg {
+	fill: white;
+	height: 100px;
+	width: 100px;
 }
 
 //-----SECTION 4 --------//
 
 #section4 {
 	background: black;
-}
-
-//-----SECTION 5 --------//
-
-#section5 {
 }
 
 .make-up-wrapper {
@@ -216,6 +222,9 @@ button, #next2 {
 	justify-content: center;
 	align-items: center;
 	max-width: 1240px;
+	input[type=checkbox] {
+ 			display:none;
+ 		}
 
 	img {
 		height: 110px;
@@ -251,6 +260,17 @@ button, #next2 {
 			text-decoration: none;
 		}
 	}
+}
+
+// #loader {
+// 	display: none;
+// }
+
+//-----SECTION 5 --------//
+
+#section5 {
+	background: black;
+	color: white;
 }
 
 button i {
