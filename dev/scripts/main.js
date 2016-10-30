@@ -102,7 +102,7 @@ makeupApp.displayKit = function(){
 
 	for (var i = 0; i < $('input[name=selected-makeup]:checked').length; i++) {
 		var item = $('input[name=selected-makeup]:checked').eq(i).data();
-		var $resultsContainer = $('<div>');
+		var $resultsContainer = $('<div class="kitSelection">');
 		var $productName = $('<p>').text(item.name);
 		var $productPrice = $('<p class="price">').text('$' + item.price);
 		var $productImage = $('<img>').attr({
