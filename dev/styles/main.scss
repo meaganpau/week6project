@@ -182,23 +182,23 @@ button, #next2 {
 	width: 100%;
 }
 
-.price {
+.sec3-price {
 	text-align: center;
-	margin: 50px;
+	margin: 20px;
 	input {
 		display: none;
 	}
 }
 
-.price input[type=radio]:checked + label .icon .white {
+.sec3-price input[type=radio]:checked + label .icon .white {
 	fill: black;
 }
 
-.price input[type=radio]:checked + label .icon {
+.sec3-price input[type=radio]:checked + label .icon {
 	background: $red;
 }
 
-.price svg {
+.sec3-price svg {
 	height: 3rem;
 }
 
@@ -252,6 +252,7 @@ button, #next2 {
 		justify-content: center;
 		padding: 15px;
 		background: white;
+		position: relative;
 		p {
 		line-height: 1.76rem;
 		text-transform: uppercase;
@@ -269,6 +270,10 @@ button, #next2 {
 			font-color: grey;
 			color: grey;
 			text-decoration: none;
+			position: absolute;
+			right: 50%;
+			bottom: 10px;
+			transform: translateX(50%);
 		}
 	}
 }
