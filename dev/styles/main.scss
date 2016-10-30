@@ -307,6 +307,10 @@ button, #next2 {
 	display: flex;
     // align-items: center;
     .kitSelection {
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-between;
+    	align-items: center;
     	width: 100%;
     	max-width: 100%;
     	max-height: 100%;
@@ -333,7 +337,7 @@ button, #next2 {
 	.price {
 			font-weight: 600;
 			font-size: 1.2rem;
-			margin-top:5px;
+			// margin-top:5px;
 		}	
 	a, p {
 		font-family: $roboto;
