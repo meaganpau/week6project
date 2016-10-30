@@ -42,8 +42,6 @@ makeupApp.selectedPrice = function() {
 }
 
 makeupApp.filterProduct = function(results) {
-
-	console.log("res",results)
 	var firstResults = results
 	firstResults.forEach(function(item){
 		var $resultsContainer = $('<div>');
@@ -60,7 +58,6 @@ makeupApp.filterProduct = function(results) {
 		});
 		$productlink.append('VIEW MORE DETAILS');
 		$resultsContainer.append($productImage, $productName, $productPrice, $productlink);
-
 		var $labelContainer = $('<div>').attr({
 			class: 'productItem'
 		});
@@ -78,12 +75,10 @@ makeupApp.filterProduct = function(results) {
 			price: item.price,
 			product_link: item.product_link
 		});
-
-
-		$label.append($resultsContainer);
-
-		$labelContainer.append($label, $input);
-		$('.last-results').append($labelContainer);
+		// $('#loader').fadeOut(1000);
+		$labelContainer.append($resultsContainer);
+		$label.append($labelContainer, $input);
+		$('.last-results').append($label);
 		makeupApp.selectFinals();
 	});
 		
@@ -107,7 +102,7 @@ makeupApp.displayKit = function(){
 
 	for (var i = 0; i < $('input[name=selected-makeup]:checked').length; i++) {
 		var item = $('input[name=selected-makeup]:checked').eq(i).data();
-		var $resultsContainer = $('<div>');
+		var $resultsContainer = $('<div class="kitSelection">');
 		var $productName = $('<p>').text(item.name);
 		var $productPrice = $('<p class="price">').text('$' + item.price);
 		var $productImage = $('<img>').attr({
@@ -185,6 +180,7 @@ $('#next2').on('click', function(e){
 	$('#section3').fadeOut();
 	$('#section4').delay(500).fadeIn();
 	makeupApp.selectedPrice();
+	// $('#loader').fadeIn(1000);
 })
 
 $('#back2').on('click', function(e){
