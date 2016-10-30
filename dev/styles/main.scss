@@ -309,7 +309,7 @@ button, #next2 {
     .kitSelection {
     	display: flex;
     	flex-direction: column;
-    	// justify-content: space-between;
+    	justify-content: space-between;
     	align-items: center;
     	width: 100%;
     	max-width: 100%;
@@ -317,7 +317,6 @@ button, #next2 {
     	border: 1px solid #8f8f8f;
     	margin: 6px;
     	align-items: center;
-		justify-content: center;
 		padding: 15px;
 		background: white;
     }
