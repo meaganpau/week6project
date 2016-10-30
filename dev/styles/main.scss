@@ -127,11 +127,6 @@ button, #next2 {
 	text-align: center;
 }
 
-.white {
-	fill: white;
-	transition: all ease .3s;
-}
-
 .make-up input[type=checkbox]:checked + label .icon .white{
 	fill: black;
 }
@@ -139,7 +134,6 @@ button, #next2 {
 .make-up input[type=checkbox]:checked + label .icon{
 	background: $red;
 }
-
 
 .make-up svg {
 	height: 5.4rem;
@@ -180,15 +174,31 @@ button, #next2 {
 	background: black;
 	color: white;
 	text-align: center;
-	fieldset label {
-		display: inline-block;
+}
+
+.price-wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.price {
+	text-align: center;
+	margin: 50px;
+	input {
+		display: none;
 	}
 }
 
-svg {
-	fill: white;
-	height: 100px;
-	width: 100px;
+.price input[type=radio]:checked + label .icon .white {
+	fill: black;
+}
+
+.price input[type=radio]:checked + label .icon {
+	background: $red;
+}
+
+.price svg {
+	height: 3rem;
 }
 
 //-----SECTION 4 --------//
