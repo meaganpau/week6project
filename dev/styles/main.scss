@@ -263,7 +263,7 @@ button, #next2 {
 		.price {
 			font-weight: 600;
 			font-size: 1.2rem;
-			margin-top:5px;
+			margin: 5px 0px 20px;
 		}
 		a {
 			font-family: $roboto;
@@ -272,8 +272,9 @@ button, #next2 {
 			text-decoration: none;
 			position: absolute;
 			right: 50%;
-			bottom: 10px;
+			bottom: 15px;
 			transform: translateX(50%);
+			letter-spacing: 0.018rem;
 		}
 	}
 }
