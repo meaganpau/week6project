@@ -309,7 +309,7 @@ button, #next2 {
     .kitSelection {
     	display: flex;
     	flex-direction: column;
-    	justify-content: space-between;
+    	// justify-content: space-between;
     	align-items: center;
     	width: 100%;
     	max-width: 100%;
@@ -345,6 +345,10 @@ button, #next2 {
 		color: grey;
 		text-decoration: none;
 	}
+}
+
+.kitSelection {
+	justify-content: space-between;
 }	
 
 button i {
