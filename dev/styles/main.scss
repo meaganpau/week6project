@@ -174,7 +174,7 @@ button, #next2 {
 }
 
 .section-wrapper {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -302,6 +302,9 @@ button, #next2 {
 			bottom: 15px;
 			transform: translateX(50%);
 			letter-spacing: 0.018rem;
+			&:hover {
+				color: $red;
+			}
 		}
 	}
 }
