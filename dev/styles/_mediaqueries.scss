@@ -1,0 +1,76 @@
+@media (max-width: 960px) {
+	html {
+		font-size: 9px;
+	}
+	#section1 h1 {
+		font-size:6.5rem;
+		line-height:6.9rem;
+	}
+	.inner-wrapper img {
+		position: relative;
+		top: -14px;
+		width: 108px;
+	}
+	h2 {
+		line-height:6rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#section1 h1 {
+		font-size:6rem;
+		margin-bottom: 3.5rem;
+	}
+	.inner-wrapper {
+		padding: 13px;
+		p {
+			margin: 1% 3%;
+			line-height:2rem;
+		}
+	}
+	.icon {
+		width:90px;
+		height:90px;
+		margin:10px;
+	}
+	.make-up {
+		svg {
+			height:5.0rem;
+		}
+	}
+	.price-wrapper {
+		flex-wrap:wrap;
+	}
+	.title p{
+		line-height:2.5rem;
+	}
+}
+
+@media (max-width: 560px) {
+	#section1 h1 {
+		font-size:6rem;
+		margin-bottom: 3.5rem;
+	}
+	.inner-wrapper {
+		p {
+			padding: 0 3%;
+			line-height:2.3rem;
+		}
+	}
+	p {
+		margin:5%;
+	}
+}
+
+@media (max-width: 460px) {
+	#section1 h1 {
+		font-size:5.2rem;
+		line-height:6rem;
+		margin-bottom: 3.5rem;
+	}
+	.inner-wrapper {
+		p {
+			padding: 1rem 3%;
+		}
+	}
+}
