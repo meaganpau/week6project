@@ -31,16 +31,13 @@
 	.icon {
 		width:90px;
 		height:90px;
-		margin:10px;
 	}
 	.make-up {
 		svg {
 			height:5.0rem;
 		}
 	}
-	.price-wrapper {
-		flex-wrap:wrap;
-	}
+
 	.title p{
 		line-height:2.5rem;
 	}
@@ -62,6 +59,10 @@
 	}
 	.make-up {
 		margin: .5rem 1.6rem;
+	}
+
+	.price-wrapper {
+		flex-wrap:wrap;
 	}
 }
 
