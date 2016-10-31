@@ -77,7 +77,7 @@ makeupApp.filterProduct = function(results) {
 		});
 		// $('#loader').fadeOut(1000);
 		$labelContainer.append($resultsContainer);
-		$label.append($labelContainer, $input);
+		$label.append($input, $labelContainer);
 		$('.last-results').append($label);
 		makeupApp.selectFinals();
 	});

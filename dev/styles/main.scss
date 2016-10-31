@@ -8,15 +8,19 @@
 }
 	
 //---GLOBAL ---//
-html {
+@media (max-width: 1600px) {
+	html {
 	font-size: 10px;
+	}
 }
 
 h1, h2, h3, p {
 	margin: 0;
 	padding: 0;
 }
-
+body {
+	background:black;
+}
 
 h2 {
 	text-transform: uppercase;
@@ -24,6 +28,10 @@ h2 {
 	font-size: 5rem;
 	font-family: $oswald;
 	text-align: center;
+}
+
+h2:nth-child(1) {
+	padding-top:2.2rem;
 }
 
 h3 {
@@ -37,11 +45,12 @@ h3 {
 p {
 	font-family: $roboto;
 	font-size: 1.5rem;
-	margin: 1%;
+	margin: 2%;
 	font-weight: 300;
 	letter-spacing: 1px;
 	line-height: 0.75;
 }
+
 
 fieldset {
 	border:none;
@@ -55,9 +64,15 @@ button, #next2 {
 	padding: 10px;
 	width: 200px;
 	font-family: $roboto;
-	margin: 5%;
-	font-size: 1.5rem;
+	margin: 5% 3%;
+	font-size: 1.3rem;
 	letter-spacing: 1px;
+	&:focus {
+	outline: 0;
+	}
+	&:hover {
+		background: darken($red, 7%);
+	}
 }
 
 //---SECTION 1 ---//
@@ -94,6 +109,9 @@ button, #next2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	p {
+		margin:1%;
+	}
 }
 
 .inner-wrapper img {
@@ -116,12 +134,6 @@ button, #next2 {
 		text-align: center;
 		color:white;
 	}
-}
-
-.make-up-wrapper {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
 }
 
 .make-up {
@@ -179,12 +191,17 @@ button, #next2 {
 
 .price-wrapper {
 	display: flex;
-	width: 100%;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	max-width: 940px;
+	margin: 0 auto;
+	// flex-wrap:wrap;
 }
 
 .sec3-price {
 	text-align: center;
-	margin: 20px;
+	margin: 4rem 2rem 3rem;
 	input {
 		display: none;
 	}
@@ -198,14 +215,16 @@ button, #next2 {
 	background: $red;
 }
 
+
 .sec3-price svg {
 	height: 3rem;
 }
 
 //-----SECTION 4 --------//
-
 #section4 {
 	background: black;
+	color: white;
+	text-align: center;
 }
 
 .make-up-wrapper {
@@ -213,13 +232,18 @@ button, #next2 {
 	width: 80%;
 	display: flex;
 	flex-wrap: wrap;
+	max-width:940px;
+	justify-content: center;
+	align-items: center;
 }
 
 .make-up {
-	width: 20%;
-	margin-top: 4rem;
+	margin: 2rem 1.6rem;
 	input{
 		visibility: hidden;
+	}
+	h3 {
+		margin-bottom: 2rem;
 	}
 }
 
@@ -243,7 +267,7 @@ button, #next2 {
 	.productItem {
 		text-align: center;
 		width: 250px;
-		border: 1px solid #8f8f8f;
+		border: 4px solid white;
 		height: 250px;
 		margin: 6px;
 		display: flex;
@@ -253,12 +277,16 @@ button, #next2 {
 		padding: 15px;
 		background: white;
 		position: relative;
+		&:hover {
+			border: 4px solid #dbdbdb;
+		}
 		p {
 		line-height: 1.76rem;
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1.3rem;
 		margin-top:10px;
+		color:$grey;
 		}
 		.price {
 			font-weight: 600;
@@ -267,7 +295,6 @@ button, #next2 {
 		}
 		a {
 			font-family: $roboto;
-			font-color: grey;
 			color: grey;
 			text-decoration: none;
 			position: absolute;
@@ -277,6 +304,10 @@ button, #next2 {
 			letter-spacing: 0.018rem;
 		}
 	}
+}
+
+.last-results input[type=checkbox]:checked ~ .productItem {
+	border: 4px solid $red;
 }
 
 // #loader {
@@ -346,7 +377,6 @@ button, #next2 {
 		}	
 	a, p {
 		font-family: $roboto;
-		font-color: grey;
 		color: grey;
 		text-decoration: none;
 	}
@@ -359,3 +389,5 @@ button, #next2 {
 button i {
 	color: white;
 }
+
+@import 'mediaqueries';
